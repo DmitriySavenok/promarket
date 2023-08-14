@@ -1,117 +1,87 @@
 .header {
-	position: fixed;
-	left: 0;
-	right: 0;
-	top: 0;
-	z-index: 2100;
-	display: flex;
-	align-items: center;
-	padding: 30px;
-	background-color: $color-white;
+	padding-top: 45px;
+	padding-bottom: 14px;
+	background-color: $color-header-background;
 
-	&__logo {
-		display: block;
-		width: 140px;
-		height: 19px;
-		transition: $duration-normal;
+	&__info {
+		display: grid;
+		align-items: center;
+		justify-content: space-between;
+		grid-template-columns: auto auto auto auto;
 	}
 
-	&__menu {
-		position: fixed;
-		left: 0;
-		top: 0;
-		z-index: 98;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		overflow: hidden;
-		overflow-y: auto;
-		margin: 0;
-		margin-top: 84px;
-		padding: 0 20px;
-		width: 100vw;
-		height: 100vh;
-		// stylelint-disable-next-line
-		height: calc(var(--vh) - 84px);
-		color: $color-black;
-		background-color: rgba($color-black, 0.1);
-		opacity: 0;
-		visibility: hidden;
-		transform: translateX(100%);
-		transition: $duration-normal;
-		-webkit-overflow-scrolling: touch;
-
-		@include active {
-			opacity: 1;
-			visibility: visible;
-			transform: translateX(0);
-		}
-	}
-
-	&__list {
-		width: 100%;
-		text-align: center;
-	}
-
-	&__link {
-		position: relative;
+	&__button {
 		display: flex;
 		align-items: center;
-		justify-content: left;
-		margin: 0 auto;
-		padding: 10px 30px;
-		min-height: 85px;
-		font-weight: 700;
-		font-size: 16px;
-		line-height: 25px;
-		text-align: left;
-		color: rgba($color-black, 0.7);
-		background-color: $color-white;
+		border: 0;
+		font-size: 14px;
+		color: $color-blue-text;
+		background: transparent;
+		transition: color $duration-normal ease;
+		gap: 8px;
 
-		&:not(:last-child) {
-			border-bottom: 1px solid $color-gray;
-		}
-
-		&:first-child {
-			border-top: 1px solid $color-gray;
-		}
-
-		@include hover {
-			color: $color-black;
-		}
-
-		@include active {
-			color: $color-black;
+		span {
+			border-bottom: dotted 1px $color-blue-text;
 		}
 	}
 
-	&__burger {
-		z-index: 100;
-		flex-direction: column;
-		margin: (-6.5px / 2) 0;
-		margin-left: auto;
-		width: 39px;
+	&__logo {
+		height: auto;
+		max-width: 300px;
+	}
+
+	&__phone {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+	}
+
+	&__phone-link {
+		font-size: 21px;
 		color: $color-black;
+	}
 
-		span {
-			display: block;
-			margin: 6.5px 0;
-			width: 39px;
-			height: 2px;
-			background-color: currentColor;
-			transition: $duration-normal;
+	&__links {
+		display: flex;
+		padding: 0;
+		gap: 20px;
+
+		a {
+			font-size: 14px;
+			color: $color-blue-text;
+			transition: color $duration-normal ease;
 		}
+	}
+}
 
-		@include active {
-			span {
-				&:first-child {
-					transform: translate(0, 8px) rotate(-45deg);
-				}
+.location-icon {
+	width: auto;
+	height: 13px;
+	fill: $color-yellow;
+}
 
-				&:last-child {
-					transform: translate(0, -6px) rotate(45deg);
-				}
-			}
-		}
+.order-a-call__icon {
+	display: flex;
+	flex-shrink: 0;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	width: 16px;
+	height: 16px;
+	background: $color-yellow;
+
+	svg {
+		width: 8px;
+		height: auto;
+	}
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.header__button:hover {
+		color: $color-blue-hover;
+	}
+
+	.header__link-info:hover {
+		color: $color-blue-hover;
 	}
 }
