@@ -32,14 +32,36 @@ header.header
 				span Заказать звонок
 
 		ul.header__links
-			li
-				a(href="#").header__link-info Оплата
-			li
-				a(href="#").header__link-info Доставка
-			li
-				a(href="#").header__link-info Поставщикам
-			li
-				a(href="#").header__link-info Статьи
-			li
-				a(href="#").header__link-info Контакты
+			each object, key in data.header.info_links
+				li
+					a.header__link-info(
+						href=object.url
+						data-link=key
+					)
+						!= object.name
 
+	.header__menu.container
+		.header__cataloge-button
+			button.header__menu-btn.cataloge-btn
+				<svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect width="24" height="2" fill="#FBFAF9"/>
+					<rect y="8" width="24" height="2" fill="#FBFAF9"/>
+					<rect y="16" width="24" height="2" fill="#FBFAF9"/>
+				</svg>
+				span Каталог товаров
+			a(href="#", target="_blank").header__menu-btn.actions-btn Акции
+			a(href="#", target="_blank").header__menu-btn.brands-btn Бренды
+		.header__search
+			form(action="").header__search-form
+				input(class="search-field" type="text" placeholder="Что вы ищете?")
+				button(type="submit" title="Искать").search-btn
+					<svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill="none" fill-rule="evenodd" clip-rule="evenodd" d="M13.8384 4.27593C16.7953 7.23283 16.7953 11.9397 13.8384 14.8966C10.8815 17.8535 6.17457 17.8535 3.21767 14.8966C0.260776 11.9397 0.260776 7.23283 3.21767 4.27593C6.11422 1.37938 10.8815 1.37938 13.8384 4.27593Z" stroke="#2B7BC6" stroke-width="1.8" stroke-miterlimit="22.9256"/>
+						<path fill="none" d="M13.8398 14.957L20.8398 21.957L20.9605 22.0777" stroke="#2B7BC6" stroke-width="1.8" stroke-miterlimit="22.9256"/>
+					</svg>
+
+
+		.header__user
+			span пользователь
+			span желаемое
+			span корзина
