@@ -114,6 +114,50 @@
 			background-color: $color-white;
 		}
 	}
+
+	&__user-links-list {
+		display: flex;
+		align-items: center;
+		height: 100%;
+		background-color: $color-gray-background;
+
+		li {
+			position: relative;
+			padding: 0 15px;
+		}
+
+		svg {
+			width: auto;
+			height: 23px;
+			fill: $color-blue-light;
+		}
+	}
+}
+
+.not-empty::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: -28px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	width: 22px;
+	height: 22px;
+	font-weight: 700;
+	font-size: 12px;
+	color: $color-blue-dark;
+	background-color: $color-yellow;
+	transform: translate(-50%);
+}
+
+.wish-list-link.not-empty::after {
+	content: "4";
+}
+
+.basket-link.not-empty::after {
+	content: "2";
 }
 
 .cataloge-btn {
@@ -126,6 +170,10 @@
 
 .brands-btn {
 	background-color: $color-blue-light;
+}
+
+.search-btn svg {
+	stroke: $color-blue-light;
 }
 
 .location-icon {
@@ -147,6 +195,7 @@
 	svg {
 		width: 8px;
 		height: auto;
+		fill: $color-blue-light;
 	}
 }
 
@@ -157,5 +206,17 @@
 
 	.header__link-info:hover {
 		color: $color-blue-dark;
+	}
+
+	.search-btn:hover {
+		svg {
+			stroke: $color-blue-dark;
+		}
+	}
+
+	.header__user-link:hover {
+		svg {
+			fill: $color-blue-dark;
+		}
 	}
 }
