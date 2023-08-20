@@ -1,0 +1,11 @@
+.simple-link {
+	font-size: 14px;
+	color: $color-blue-light;
+	transition: color $duration-normal ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.simple-link:hover {
+		color: $color-blue-dark;
+	}
+}

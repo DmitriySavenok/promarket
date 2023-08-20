@@ -1,0 +1,21 @@
+.simple-btn {
+	border: 1px solid $color-blue-midle;
+	border-radius: 4px;
+	padding: 6px 13px;
+	width: fit-content;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 24px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: $color-blue-midle;
+	background: transparent;
+	transition: background-color ease $duration-normal;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.simple-btn:hover {
+		color: $color-white;
+		background: $color-blue-midle;
+	}
+}

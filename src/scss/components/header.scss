@@ -48,12 +48,6 @@
 		flex-wrap: wrap;
 		padding: 0;
 		gap: 20px;
-
-		a {
-			font-size: 14px;
-			color: $color-blue-light;
-			transition: color $duration-normal ease;
-		}
 	}
 
 	&__menu {

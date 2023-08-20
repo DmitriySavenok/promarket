@@ -25,11 +25,13 @@ html {
 }
 
 body {
+	font-family: $font-family-montserrat;
 	-webkit-font-smoothing: antialiased;
 	text-decoration-skip: objects;
 	text-rendering: optimizeLegibility;
 	text-size-adjust: 100%;
 	-webkit-tap-highlight-color: transparent;
+	background-color: $color-page-background;
 }
 
 main {
