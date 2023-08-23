@@ -144,6 +144,18 @@ iframe {
 	max-width: 1540px;
 }
 
+.grid {
+	position: relative;
+	z-index: 1;
+	display: grid;
+	justify-content: center;
+	grid-template-columns: repeat(12, 1fr);
+	margin: 0 auto;
+	padding: 0 40px;
+	max-width: 1540px;
+	gap: 20px;
+}
+
 .site {
 	display: flex;
 	flex-direction: column;
@@ -157,6 +169,7 @@ iframe {
 * Немедленно переместите любую анимацию в конечную точку, если пользователь установил свое устройство в положение "prefers reduced motion".
 * Это может привести к плохим(непреднамеренным) последствиям. Удалите по мере необходимости и напишите свой собственный код для prefers-reduced-motion.
 */
+
 @media (prefers-reduced-motion: reduce) {
 	*,
 	*:before,
