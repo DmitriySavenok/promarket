@@ -2,20 +2,16 @@ header.header
 	.header__info.container
 		.header__logo
 			a(href="#")
-				#{data.logo_icon.svg}
+				+svg("company-logo")
 		.header__location
 			button.header__button.location-btn#location-btn
-				<svg class="location-icon" width="10" height="13" viewBox="0 0 10 13" xmlns="http://www.w3.org/2000/svg">
-					<path fill-rule="evenodd" clip-rule="evenodd" d="M10 4.70476C10 2.10476 7.76221 0 4.99789 0C1.77284 0 -0.728211 2.90952 0.193231 6.12857C0.324865 6.5 0.522317 6.93333 0.785586 7.30476L0.851403 7.36667L4.60299 12.8143C4.80044 13.0619 5.19534 13.0619 5.39279 12.8143L9.21019 7.24286C9.73673 6.5 10 5.57143 10 4.70476ZM6.42855 4.84025C6.42855 5.5498 5.76921 6.15798 4.99998 6.15798C4.23075 6.15798 3.57141 5.65116 3.57141 4.84025C3.57141 4.02933 4.23075 3.42114 4.99998 3.42114C5.8791 3.42114 6.42855 4.13069 6.42855 4.84025Z"/>
-				</svg>
+				+svg("location")
 				span Москва
 		.header__phone
 			a(href="tel:+74950183210").header__phone-link 8 495 018-32-10
 			button.header__button.order-a-call
 				.order-a-call__icon
-					<svg width="8" height="5" viewBox="0 0 8 5" xmlns="http://www.w3.org/2000/svg">
-						<path d="M7.87075 0.636943L7.35462 0.127389C7.19333 -0.0318471 6.96752 -0.0318471 6.80623 0.127389L3.96752 2.92994L1.16107 0.0955414C1.03204 -0.0318471 0.773973 -0.0318471 0.644941 0.0955414L0.0965537 0.636943C-0.0647366 0.796178 -0.0647366 1.01911 0.0965537 1.17834L3.96752 5L7.83849 1.17834C8.03204 1.01911 8.03204 0.764331 7.87075 0.636943Z"/>
-					</svg>
+					+svg("arrow-down")
 				span Заказать звонок
 
 		ul.header__links
@@ -30,11 +26,7 @@ header.header
 	.header__menu.container
 		.header__cataloge-button
 			button.header__menu-btn.cataloge-btn
-				<svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<rect width="24" height="2" fill="#FBFAF9"/>
-					<rect y="8" width="24" height="2" fill="#FBFAF9"/>
-					<rect y="16" width="24" height="2" fill="#FBFAF9"/>
-				</svg>
+				+svg("burger")
 				span Каталог товаров
 			a(href="#", target="_blank").header__menu-btn.actions-btn Акции
 			a(href="#", target="_blank").header__menu-btn.brands-btn Бренды
@@ -43,10 +35,7 @@ header.header
 			form(action="").header__search-form
 				input(class="search-field" type="text" placeholder="Что вы ищете?")
 				button(type="submit" title="Искать").search-btn
-					<svg width="22" height="24" viewBox="0 0 22 24" xmlns="http://www.w3.org/2000/svg">
-						<path fill="none" fill-rule="evenodd" clip-rule="evenodd" d="M13.8384 4.27593C16.7953 7.23283 16.7953 11.9397 13.8384 14.8966C10.8815 17.8535 6.17457 17.8535 3.21767 14.8966C0.260776 11.9397 0.260776 7.23283 3.21767 4.27593C6.11422 1.37938 10.8815 1.37938 13.8384 4.27593Z" stroke-width="1.8" stroke-miterlimit="22.9256"/>
-						<path d="M13.8398 14.957L20.8398 21.957L20.9605 22.0777" stroke-width="1.8" stroke-miterlimit="22.9256"/>
-					</svg>
+					+svg("search")
 
 
 		ul.header__user-links-list

@@ -44,8 +44,8 @@
 		align-self: center;
 
 		svg {
-			width: auto;
 			height: 24px;
+			max-width: 214px;
 		}
 
 		p {
@@ -59,8 +59,9 @@
 		gap: 30px;
 
 		svg {
+			width: 28px;
 			height: 28px;
-			fill: $color-blue-midle;
+			fill: $color-blue-light;
 			transition: fill ease $duration-normal;
 		}
 	}

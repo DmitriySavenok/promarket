@@ -16,6 +16,7 @@
 		align-items: center;
 		border: 0;
 		padding: 0;
+		width: fit-content;
 		font-size: 14px;
 		color: $color-blue-light;
 		background: transparent;
@@ -27,9 +28,9 @@
 		}
 	}
 
-	&__logo {
-		height: auto;
-		max-width: 300px;
+	&__logo svg {
+		width: auto;
+		max-height: 40px;
 	}
 
 	&__phone {
@@ -74,7 +75,7 @@
 		gap: 20px;
 
 		svg {
-			width: auto;
+			width: 20px;
 			height: 18px;
 			fill: $color-gray-light;
 		}
@@ -112,16 +113,17 @@
 	&__user-links-list {
 		display: flex;
 		align-items: center;
+		padding: 0 40px;
 		height: 100%;
 		background-color: $color-gray-background;
+		gap: 40px;
 
 		li {
 			position: relative;
-			padding: 0 15px;
 		}
 
 		svg {
-			width: auto;
+			width: 28px;
 			height: 23px;
 			fill: $color-blue-light;
 		}
@@ -167,11 +169,14 @@
 }
 
 .search-btn svg {
+	width: 22px;
+	height: 23px;
+	fill: none;
 	stroke: $color-blue-light;
 }
 
-.location-icon {
-	width: auto;
+.location-btn svg {
+	width: 10px;
 	height: 13px;
 	fill: $color-yellow;
 }
@@ -188,8 +193,9 @@
 
 	svg {
 		width: 8px;
-		height: auto;
+		height: 5px;
 		fill: $color-blue-light;
+		transform: translate(0.7px, 1px);
 	}
 }
 
