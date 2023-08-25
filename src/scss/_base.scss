@@ -156,6 +156,15 @@ iframe {
 	gap: 20px;
 }
 
+.section-title {
+	border-bottom: 1px solid $color-blue-midle;
+	width: fit-content;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+	color: $color-black;
+}
+
 .site {
 	display: flex;
 	flex-direction: column;

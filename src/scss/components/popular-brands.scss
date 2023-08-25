@@ -1,0 +1,39 @@
+.popular-brands {
+	padding-bottom: 40px;
+
+	.grid {
+		grid-template-columns: repeat(6, 1fr);
+		gap: 20px;
+	}
+
+	&__title {
+		margin-bottom: 40px;
+	}
+
+	&__logos {
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			height: 132px;
+			background-color: $color-white;
+		}
+
+		img {
+			max-width: 40%;
+			max-height: 50px;
+		}
+	}
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.popular-brands__link:hover {
+		img {
+			max-width: 50%;
+			max-height: 65px;
+			transition: ease $duration-normal;
+			transition-property: max-width, max-height;
+		}
+	}
+}

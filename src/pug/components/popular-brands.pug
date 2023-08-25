@@ -1,0 +1,8 @@
+section.popular-brands
+	.container
+		h2.section-title.popular-brands__title Популярные бренды
+	ul.popular-brands__logos.grid
+		each object, key in data.brand_logos.logos_img_url
+				li
+					a(href="#").popular-brands__link
+						img(src=object.url alt=object.name+" logo")
