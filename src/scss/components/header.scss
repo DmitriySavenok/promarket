@@ -107,6 +107,12 @@
 			border: 0;
 			padding: 0 20px;
 			background-color: $color-white;
+
+			svg {
+				width: 28px;
+				height: 27px;
+				fill: $color-blue-light;
+			}
 		}
 	}
 
@@ -124,7 +130,7 @@
 
 		svg {
 			width: 28px;
-			height: 23px;
+			height: 24px;
 			fill: $color-blue-light;
 		}
 	}
@@ -168,13 +174,6 @@
 	background-color: $color-blue-light;
 }
 
-.search-btn svg {
-	width: 22px;
-	height: 23px;
-	fill: none;
-	stroke: $color-blue-light;
-}
-
 .location-btn svg {
 	width: 10px;
 	height: 13px;
@@ -200,20 +199,12 @@
 }
 
 @media (hover: hover) and (pointer: fine) {
-	.header__button:hover {
-		color: $color-blue-dark;
-	}
-
+	.header__button:hover,
 	.header__link-info:hover {
 		color: $color-blue-dark;
 	}
 
-	.search-btn:hover {
-		svg {
-			stroke: $color-blue-dark;
-		}
-	}
-
+	.search-btn:hover,
 	.header__user-link:hover {
 		svg {
 			fill: $color-blue-dark;
