@@ -13,5 +13,4 @@ vhFix();
 actualYear();
 scrollToAnchor.init();
 
-header.init();
 lazyLoading.init();

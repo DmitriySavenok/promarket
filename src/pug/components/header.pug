@@ -25,7 +25,7 @@ header.header
 
 	.header__menu.container
 		.header__cataloge-button
-			button.header__menu-btn.cataloge-btn
+			button.header__menu-btn.cataloge-btn#cataloge-btn
 				+svg("burger")
 				span Каталог товаров
 			a(href="#", target="_blank").header__menu-btn.actions-btn Акции
@@ -49,3 +49,5 @@ header.header
 			li
 				a(href="#", target="_blank" title="Корзина покупок").basket-link.not-empty.header__user-link
 					+svg("basket")
+
+	include navigation

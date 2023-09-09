@@ -2,6 +2,7 @@
 
 $background-layer: 10;
 $content-layer: 20;
+$dropdown-layer: 30;
 
 // COLORS
 $color-black: #000;
@@ -12,12 +13,14 @@ $color-page-background: #f3f9ff;
 $color-gray-background: #f1f8ff;
 $color-green-background: #3bb9b8;
 $color-green-background-opacity: rgba(59, 185, 184, 0.8);
+$color-blue-background-opacity: rgba(212, 228, 243, 0.7);
 $color-header-background: #e1eefb;
 $color-blue-light: #2b7bc6;
 $color-blue-midle: #1061ab;
 $color-blue-dark: #004c93;
 $color-gray-blue: #99a3a9;
 $color-yellow: #ffd600;
+$color-red: #ea1649;
 
 // FONTS
 // stylelint-disable-next-line

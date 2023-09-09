@@ -1,0 +1,30 @@
+nav.navigation.grid
+	.navigation__categories
+		ul.navigation__categories-list
+			each object, key in data.header.navigation_categories
+				li.navigation__categories-item
+					a.navigation__categories-link(data-link=key, id=object.class, href=object.href)
+						svg
+							use(xlink:href=object.svg)
+						span!= object.name
+
+	.navigation__content
+		.navigation__plumbing
+			h2.navigation__plumbing-title Сантехника
+			.navigation__plumbing-grid
+				ul.navigation__plumbing-subcategory-list
+					span Ванны
+					each object, key in data.header.info_links
+						li
+							a.navigation__plumbing.simple-link(
+								href=object.url
+								data-link=key
+							)
+								!= object.name
+				ul.navigation__plumbing-subcategory-list
+					span Унитазы
+				ul.navigation__plumbing-subcategory-list
+					span Раковины
+				ul.navigation__plumbing-subcategory-list
+					span Смесители
+				.navigation__plumbing-general-list

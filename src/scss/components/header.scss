@@ -1,6 +1,5 @@
 .header {
 	padding-top: 45px;
-	padding-bottom: 14px;
 	background-color: $color-header-background;
 
 	&__info {
@@ -52,6 +51,8 @@
 	}
 
 	&__menu {
+		position: sticky;
+		top: 0;
 		display: grid;
 		align-items: center;
 		grid-template-columns: max-content auto max-content;
@@ -70,6 +71,7 @@
 		border: 0;
 		padding: 20px 24px;
 		width: fit-content;
+		letter-spacing: 2.4px;
 		text-transform: uppercase;
 		color: $color-gray-light;
 		transition: opacity $duration-normal ease;
@@ -164,6 +166,9 @@
 }
 
 .cataloge-btn {
+	position: relative;
+	justify-content: space-around;
+	min-width: 296px;
 	background-color: $color-blue-dark;
 }
 

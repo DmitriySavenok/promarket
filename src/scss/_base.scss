@@ -35,6 +35,7 @@ body {
 }
 
 main {
+	position: relative;
 	flex: 1;
 }
 
@@ -145,7 +146,6 @@ iframe {
 }
 
 .grid {
-	position: relative;
 	z-index: 1;
 	display: grid;
 	justify-content: center;
